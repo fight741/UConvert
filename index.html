@@ -1,0 +1,77 @@
+<html>
+<scrip>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" -->
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script language="javascript" src="assets/js/formula.js"></script>
+    <script>weight()</script>
+  </head>
+<body>
+<!--sidebar start-->
+  <div class="sidebar">
+    <ul>
+      <li><a class="ion-ios-briefcase"  title="重量" onclick="weight()"></a></li>
+      <li><a class="ion-arrow-resize"  title="長度" onclick="length()"></a></li>
+      <li><a class="ion-speedometer"  title="速度" onclick="speed()"></a></li>
+      <li><a class="ion-arrow-shrink"  title="壓力" onclick="pressure()"></a></li>
+      <li><a class="ion-earth"  title="面積" onclick="area()"></a></li>
+      <li><a class="ion-cube"  title="體積" onclick="volumn()"></a></li>
+      <li><a class="ion-thermometer"  title="溫度" onclick="temp()"></a></li>
+    </ul>
+  </div>
+
+  <a class="btn"></a>
+
+  <script>
+    $(".btn").on("click",function(){
+      $(".btn").toggleClass("btnc");
+      $(".sidebar").toggleClass("side");
+    });
+  </script>
+<!--sidebar end-->
+  <div class="header">
+    <div class="headertext">
+      <p>Unit &nbsp Converter</p>
+    </div>
+  </div>
+  <div class="column">
+    <select id="unitselect1"  size="2" onchange="unitconvert()">
+      <option>左側選單選取單位</option>
+      
+    </select>
+    <select id="unitselect2"  size="2" onchange="unitconvert()">
+        <option>左側選單選取單位</option>
+        
+    </select>
+    <input id="ifield" class="text-input" onfocus="init()" onchange="unitconvert()" placeholder="請輸入數字">
+      <div id="itext"></div>
+    </input>
+
+    <div id="ofield" class="text-input">
+      <div id="otext"></div>
+    </div>
+
+    <button class="midicon" title="單位互換" onclick="swap()">
+      <i class="ion-ios-loop-strong"></i>
+    </button>
+  </div>
+
+
+  <div class="footer">
+    <div class="footertext">
+      <address>Made by Gavin</address>
+    </div>
+  </div>
+
+  
+
+
+  
+
+</body>
+</html>
