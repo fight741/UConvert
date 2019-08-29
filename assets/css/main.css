@@ -44,10 +44,11 @@ html {
   height: 6vw;
   width: 6vw;
   font-size: 3vw;
+  color: black;
+  text-align: center;
   line-height: 8vw;
   border-radius: 99em;
   background: #bdc3c7;
-  color: black;
 }
 .midicon:hover {
   cursor: pointer;
@@ -145,8 +146,8 @@ html {
   color: white;
   height: 8vh;
   width: 100%;
-  font-size: 5vh;
-  line-height: 7vh;
+  font-size: 5vw;
+  line-height: 7vw;
   text-align: center;
   transition: 0.6s all;
 }
@@ -183,9 +184,6 @@ html {
   background: #1abc9c;
   height: 22vw;
   width: 100%;
-}
-.footertext {
-  position: absolute;
-  top: 55vw;
-  left: 45vw;
+  line-height: 22vw;
+  text-align: center;
 }
